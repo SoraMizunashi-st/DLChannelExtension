@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "DLChannel Extension",
+  "version": "0.0.1",
+  "description": "DLチャンネルでの記事投稿を補助するための拡張機能です。",
+  "action": {
+    "default_icon": {
+      "16" : "icons/icon16px.png",
+      "48" : "icons/icon48px.png",
+      "128": "icons/icon128px.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://www.dlsite.com/*"
+  ]
+}
